@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Figuras geometricas</h1>
+        <p>Este es el primer taller del curso practico de JS</p>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Calcula el area y perimetro de un cuadrado</h2>
+            <div>
+                <form action="">
+                    <label for="inputCuadrado">  <!-- el for es para que seleccionemos el label, nos haga focus en el input con el id "inputCuadrado" -->
+                        Ecriban cuanto mide cada lado de tu cuadrado
+                    </label>
+                    <input type="number" name="" id="inputCuadrado">
+                    <button type="button" onClick="calcPerimetroCuadrado()"> <!-- on click ejecutara la funcion "calcPerimetroCuadrado()" en js -->
+                        Calcular el perimetro
+                    </button>
+                    <button type="button" onClick="calcAreaCuadrado()">
+                        Calcular el area
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="card">
+            <div>
+                <form action="">
+                    <label for="inputTriangulo1">
+                        Ecriban cuanto mide un lado de tu Triangulo
+                    </label>
+                    <input type="number" name="" id="inputTriangulo1">
+                    <label for="inputTriangulo2">  
+                        Ecriban cuanto mide el otro lado de tu Triangulo
+                    </label>
+                    <input type="number" name="" id="inputTriangulo2">
+                    <label for="inputTriangulo3">  
+                        Ecriban cuanto mide la base de tu Triangulo
+                    </label>
+                    <input type="number" name="" id="inputTriangulo3">
+                    <button type="button" onClick="tipoTrianguloPerimetro()">
+                        Calcular el perimetro
+                    </button>
+                    <button type="button" onClick="tipoTrianguloArea()">
+                        Calcular el area
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- <section class="card">
+            <form action="">
+                <label for="inputCirculo"> 
+                </label>
+                <input type="number" name="" id="inputCirculo">
+                <button type="button" onClick="calcPerimetroCirculo()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" onClick="calcAreaCirculo()">
+                    Calcular el area
+                </button>
+            </form>
+        </section> -->
+    </main>
+    <script src="./figuras.js"></script>
+</body>
+</html>

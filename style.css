@@ -1,0 +1,18 @@
+main {
+    height: 50vh;
+    width: 100%;
+}
+
+.card {
+    margin: 30px;
+    display: block;
+}
+
+.card div form {
+    display: flex;
+    flex-direction: column;
+}
+
+.card div label, input, button {
+    margin: 5px 0;
+}
